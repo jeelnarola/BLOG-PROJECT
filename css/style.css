@@ -1,0 +1,216 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+outline: none;
+}
+.container{
+max-width: 1140px;
+margin: auto;
+}
+.row{
+display: flex;
+flex-wrap: wrap;
+}
+.flex{
+    display: flex;
+    flex-wrap: nowrap;
+}
+ul,ol{
+list-style: none;
+}
+li{
+text-decoration: none;
+}
+a{
+text-decoration: none;
+}
+p{
+    color: white;
+}
+.w-100{
+    width: 100%;
+    padding: 10px;
+}
+.w-70{
+    width: 70%;
+    padding: 20px;
+}
+.w-25{
+    width: 25%;
+    padding: 0px 10px;
+}
+.w-40{
+    width: 40%;
+    padding: 0px 10px;
+}
+.w-50{
+    width: 50%;
+    padding: 0px 10px;
+}
+
+        /* LOGIN FORM DESIN */
+
+.login-bg{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-__wTl80SAecGwDNgREHRN4v0m3ZBI8IHnQ&usqp=CAU);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.overly-login{
+    background-color: rgba(0, 0, 0, 0.395);
+    padding: 321px;
+}
+.box{
+    width: 300px;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 20px;
+    border: 2px solid black;
+    background-image: url(../img/login-bg.jfif);
+    background-size: 100%;
+    background-position: top center;
+    overflow: hidden;
+}
+.box .box-img{
+    position: relative;
+}
+.box-img svg{
+    position: absolute;
+    contain: "";
+    top: 0px;
+    width: 100%;
+}
+.login{
+    position: absolute;
+    top: 65px;
+    background-color: #0099ff;
+    width: 100%;
+    padding: 20px 40px;
+}
+.login input{
+    margin: 10px 0px;
+    border: none;
+    border-bottom: 2px solid black;
+    background-color: transparent;
+    border-radius: 40px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0,0.2);
+    padding: 8px 25px;
+    width: 100%;
+}
+.login input::placeholder{
+    color: white;
+}
+.login #submit{
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: 1px solid black;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    background-color: transparent;
+    text-transform: uppercase;
+    box-shadow: inset 0px 0px 0px 4px  rgb(0, 0, 0,0.2);
+    box-shadow: 0px 0px 10px rgb(0,0,0,0.7);
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.login .forget{
+    padding: 0px 15px;
+    color: rgba(255, 0, 0, 0.797);
+    font-size: 14px;
+    display: flex;
+    justify-content: end;
+}
+.login .login-content{
+    text-align: center;
+}
+.login .login-content a{
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.758);
+    font-weight: 900;
+    text-transform: uppercase;
+    display: block;
+    margin: 5px;
+    margin-bottom: 50px;
+}
+.box .title{
+    color: aliceblue;
+    text-align: center;
+    margin: 10px;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+.box .login-title{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px;
+    text-transform: capitalize;
+}
+
+        /* SING-UP FORM CSS DESING */
+
+.sing-up{
+    position: absolute;
+    content: "";
+    top: 130px;
+    right: 0;
+    left: 250px;
+    bottom: 0;
+    margin: auto;
+}
+.box-singup{
+    box-shadow: 0px 0px 10px rgb(0, 0, 0,0.4);
+    padding: 10px 0px;
+    margin: auto;
+   
+}
+.box-singup img{
+    width: 100%;
+}
+.sing-up #sing-up-form{
+    padding: 20px 10px;
+}
+.check-box{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.show-pass{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+#sing-up-form input{
+    margin: 10px 0px;
+}
+#sing-up-form .sing-title{
+    text-align: center;
+    margin-bottom: 10px;
+}
+#sing-up-btn{
+    padding: 10px 30px;
+    display: block;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 10px;
+    background-color: #0099ff98;
+    text-transform: uppercase;
+}
+.sing-up-login{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.678);
+}
+.sing-up-login a{
+    display: block;
+    margin-top: 5px;
+    color: black;
+}
