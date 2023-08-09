@@ -1,4 +1,47 @@
 {
-  "sing-up":[],
-  "blog":[]
+  "singup": [
+    {
+      "firstname": "jeel",
+      "lastname": "narola",
+      "email": "narolajeel29@gmail.com",
+      "password": "12345678",
+      "id": 1
+    },
+    {
+      "firstname": "bhavinbhai",
+      "lastname": "patel",
+      "email": "bhvinabhai277@gmail.com",
+      "password": "bhavunpatel006",
+      "id": 2
+    },
+    {
+      "firstname": "harshil",
+      "lastname": "lakhani",
+      "email": "harshil29@gmail.com",
+      "password": "12eqrhharshil",
+      "id": 3
+    },
+    {
+      "firstname": "niddhi",
+      "lastname": "panda",
+      "email": "panda19@gmail.com",
+      "password": "pada00897",
+      "id": 4
+    },
+    {
+      "firstname": "meet",
+      "lastname": "Shah",
+      "email": "meetpatel77@gmail.com",
+      "password": "meet--++><",
+      "id": 5
+    },
+    {
+      "firstname": "jeel",
+      "lastname": "wertyuio",
+      "email": "narolajeel@gmail.com",
+      "password": "j123456789",
+      "id": 6
+    }
+  ],
+  "blog": []
 }

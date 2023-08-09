@@ -138,6 +138,9 @@ p{
     margin: 5px;
     margin-bottom: 50px;
 }
+#login{
+    /* display: none; */
+}
 .box .title{
     color: aliceblue;
     text-align: center;
@@ -156,61 +159,128 @@ p{
 
         /* SING-UP FORM CSS DESING */
 
-.sing-up{
+        .sing-up{
+            position: absolute;
+            content: "";
+            top: 130px;
+            right: 0;
+            left: 250px;
+            bottom: 0;
+            margin: auto;
+        }
+        .box-singup{
+            box-shadow: 0px 0px 10px rgb(0, 0, 0,0.4);
+            padding: 10px 0px;
+            margin: auto;
+           
+        }
+        .box-singup img{
+            width: 100%;
+        }
+        .sing-up #sing-up-form{
+            padding: 20px 10px;
+        }
+        .check-box{
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        .show-pass{
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+        #sing-up-form input{
+            margin: 10px 0px;
+        }
+        #sing-up-form .sing-title{
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        #sing-up-btn{
+            padding: 10px 30px;
+            display: block;
+            margin: auto;
+            border: 1px solid black;
+            border-radius: 10px;
+            margin-top: 10px;
+            background-color: #0099ff98;
+            text-transform: uppercase;
+        }
+        .sing-up-login{
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+            text-transform: capitalize;
+            color: rgba(0, 0, 0, 0.678);
+        }
+        .sing-up-login a{
+            display: block;
+            margin-top: 5px;
+            color: black;
+        }
+
+.singup-icon {
+    position: relative;
+}
+.singup-icon i{
     position: absolute;
-    content: "";
-    top: 130px;
-    right: 0;
-    left: 250px;
-    bottom: 0;
-    margin: auto;
+    top: 12px;
+    right: 60px;
+    color: red;
+    font-size: 15px;
+    display: none;
 }
-.box-singup{
-    box-shadow: 0px 0px 10px rgb(0, 0, 0,0.4);
-    padding: 10px 0px;
-    margin: auto;
-   
+.singup-icon .fa-check{
+    display: none;
+    color: green;
 }
-.box-singup img{
-    width: 100%;
-}
-.sing-up #sing-up-form{
-    padding: 20px 10px;
-}
-.check-box{
-    display: flex;
-    flex-wrap: nowrap;
-}
-.show-pass{
-    margin-left: 10px;
-    margin-top: 10px;
-}
-#sing-up-form input{
-    margin: 10px 0px;
-}
-#sing-up-form .sing-title{
-    text-align: center;
-    margin-bottom: 10px;
-}
-#sing-up-btn{
-    padding: 10px 30px;
-    display: block;
-    margin: auto;
-    border: 1px solid black;
-    border-radius: 10px;
-    margin-top: 10px;
-    background-color: #0099ff98;
-    text-transform: uppercase;
-}
-.sing-up-login{
-    text-align: center;
-    margin-top: 20px;
-    font-size: 12px;
+
+#popup{
+    width: 300px;
+    padding: 10px 10px;
+    background-color: #ff0000;
+    font-size: 20px;
+    /* color: white; */
     text-transform: capitalize;
-    color: rgba(0, 0, 0, 0.678);
+    border-left: 5px solid black;
+    border-radius: 2px;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    visibility: hidden;
+    /* z-index: 9999; */
 }
-.sing-up-login a{
-    display: block;
-    margin-top: 5px;
-    color: black;
+
+.open-popup{
+    visibility: visible;
+}.password{
+    color: red;
+    padding: 0pc 75px;
+    text-transform: capitalize;
+    font-size: 10px;
+}
+#blog{
+    box-shadow: 0px 0px 10px rgb(0, 0, 0,0.2);
+    padding: 20px 30px;
+    margin: auto;
+    margin-top: 50px;
+}
+#blog input{
+    padding: 5px 10px;
+    margin: 10px;
+}
+.content{
+    position: relative;
+}#blog #img{
+    margin-left: 30px;
+}
+#blog #title{
+    margin-left: 45px;
+}
+#blog #category{
+    margin-left: 3px;
+}
+#blog #BLOGS-CONTENT{
+    margin-left: 26px;
 }
