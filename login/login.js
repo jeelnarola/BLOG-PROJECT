@@ -1,21 +1,9 @@
+ let popup = document.getElementById("popup");
+ console.log(popup);
 
-function open(){
-    popup.classLisst.add("open-login")
+const open=()=>{
+    popup.classList.add("open-login")
 }
-
-// let popup = localStorage.getItem("popup")
-// console.log(popup)
-// if(popup==true){
-//     window.addEventListener("load",()=>{
-//         setTimeout(function open(event){
-//     document.getElementById("login").style.display="block"
-//         },1000)
-//     })
-// }
-// else{
-//     console.log("finding value")
-// }
-
 // let popup = localStorage.getItem("popup");
 // console.log(popup);
     if (popup == true || popup == null) {
@@ -34,33 +22,31 @@ document.getElementById("login").addEventListener("submit",(e)=>{
     e.preventDefault()
 
 
-    let username=document.getElementById("username").value;
+    let email=document.getElementById("email").value;
     let password=document.getElementById("password").value;
-    document.getElementById("login").style.display="none"
-    localStorage.setItem("popup",false)
+    // localStorage.setItem("popup",false)
 
 
-    fetch(`http://localhost:8090/singup?firstname=${username}`)
+    fetch(`http://localhost:8090/singup?email=${email}`)
     .then((res)=>res.json())
     .then((data)=>{
         console.log(data);
         if(data.length > 0){
-            for( let i=0; i<data.length;i++){
-                if(data[i].firstname!=username){
-                    alert("jl narolka")
-                }
-                else if(data[i].password!=password){
-                    alert("password not match")
+            for( let i=0; i < data.length; i++){
+                if(data[i].email == email && data[i].password == password){
+                  // alert("pass & email same")
+                  window.location.href="http://127.0.0.1:5500/index.html"
                 }
                 else{
-                    alert("login")
-                    window.location.href="http://127.0.0.1:5500/index.html"
+                    alert("pass & email not same")
+                    // window.location.href="http://127.0.0.1:5500/index.html"
+                    open();
                 }
-
             }
         }
         else{
-            window.location.href="http://127.0.0.1:5500/sing-up/singup.html"
+          alert("length  zero")
+            // window.location.href="http://127.0.0.1:5500/sing-up/singup.html"
         }
     })
 })
